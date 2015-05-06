@@ -39,10 +39,12 @@
             this.TlsMnuSetup = new System.Windows.Forms.ToolStripMenuItem();
             this.数据ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TlsMnuData = new System.Windows.Forms.ToolStripMenuItem();
+            this.TlsMnuBatch = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.lblInfo = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblBoxWsn = new System.Windows.Forms.Label();
@@ -66,6 +68,7 @@
             this.ctxManul = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.替换瓶码ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.整箱删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnRun = new System.Windows.Forms.Button();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.ctxLogAlarm = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -76,9 +79,7 @@
             this.listBoxLog = new System.Windows.Forms.ListBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.listBoxAlarm = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.TlsMnuBatch = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblInfo = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -174,7 +175,7 @@
             // TlsMnuSetup
             // 
             this.TlsMnuSetup.Name = "TlsMnuSetup";
-            this.TlsMnuSetup.Size = new System.Drawing.Size(152, 26);
+            this.TlsMnuSetup.Size = new System.Drawing.Size(144, 26);
             this.TlsMnuSetup.Text = "设备参数";
             this.TlsMnuSetup.Click += new System.EventHandler(this.TlsMnuSetup_Click);
             // 
@@ -190,9 +191,16 @@
             // TlsMnuData
             // 
             this.TlsMnuData.Name = "TlsMnuData";
-            this.TlsMnuData.Size = new System.Drawing.Size(152, 26);
+            this.TlsMnuData.Size = new System.Drawing.Size(144, 26);
             this.TlsMnuData.Text = "数据上传";
             this.TlsMnuData.Click += new System.EventHandler(this.TlsMnuData_Click);
+            // 
+            // TlsMnuBatch
+            // 
+            this.TlsMnuBatch.Name = "TlsMnuBatch";
+            this.TlsMnuBatch.Size = new System.Drawing.Size(144, 26);
+            this.TlsMnuBatch.Text = "批次选择";
+            this.TlsMnuBatch.Click += new System.EventHandler(this.TlsMnuBatch_Click);
             // 
             // splitContainer2
             // 
@@ -227,6 +235,7 @@
             // 
             // splitContainer3.Panel2
             // 
+            this.splitContainer3.Panel2.Controls.Add(this.label5);
             this.splitContainer3.Panel2.Controls.Add(this.button1);
             this.splitContainer3.Panel2.Controls.Add(this.btnRun);
             this.splitContainer3.Size = new System.Drawing.Size(1223, 314);
@@ -266,6 +275,15 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "生产信息";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // lblInfo
+            // 
+            this.lblInfo.AutoSize = true;
+            this.lblInfo.Location = new System.Drawing.Point(46, 70);
+            this.lblInfo.Name = "lblInfo";
+            this.lblInfo.Size = new System.Drawing.Size(25, 22);
+            this.lblInfo.TabIndex = 5;
+            this.lblInfo.Text = "...";
             // 
             // label6
             // 
@@ -474,6 +492,16 @@
             this.整箱删除ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.整箱删除ToolStripMenuItem.Text = "整箱删除";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(55, 239);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(108, 46);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // btnRun
             // 
             this.btnRun.BackColor = System.Drawing.Color.LightGreen;
@@ -572,31 +600,14 @@
             this.listBoxAlarm.Size = new System.Drawing.Size(1209, 100);
             this.listBoxAlarm.TabIndex = 0;
             // 
-            // button1
+            // label5
             // 
-            this.button1.Location = new System.Drawing.Point(55, 239);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 46);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // TlsMnuBatch
-            // 
-            this.TlsMnuBatch.Name = "TlsMnuBatch";
-            this.TlsMnuBatch.Size = new System.Drawing.Size(152, 26);
-            this.TlsMnuBatch.Text = "批次选择";
-            this.TlsMnuBatch.Click += new System.EventHandler(this.TlsMnuBatch_Click);
-            // 
-            // lblInfo
-            // 
-            this.lblInfo.AutoSize = true;
-            this.lblInfo.Location = new System.Drawing.Point(46, 70);
-            this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(25, 22);
-            this.lblInfo.TabIndex = 5;
-            this.lblInfo.Text = "...";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(191, 256);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(41, 12);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "label5";
             // 
             // FrmMain
             // 
@@ -626,6 +637,7 @@
             this.splitContainer2.ResumeLayout(false);
             this.splitContainer3.Panel1.ResumeLayout(false);
             this.splitContainer3.Panel2.ResumeLayout(false);
+            this.splitContainer3.Panel2.PerformLayout();
             this.splitContainer3.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -698,5 +710,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolStripMenuItem TlsMnuBatch;
         private System.Windows.Forms.Label lblInfo;
+        private System.Windows.Forms.Label label5;
     }
 }

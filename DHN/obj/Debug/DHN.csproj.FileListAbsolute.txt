@@ -38,3 +38,5 @@ F:\MTDoc\3项目资料\2015\Debug\DHN1.0.0.0\DHN\obj\Debug\DHN.Properties.Resour
 F:\MTDoc\3项目资料\2015\Debug\DHN1.0.0.0\DHN\obj\Debug\DHN.csproj.GenerateResource.Cache
 F:\MTDoc\3项目资料\2015\Debug\DHN1.0.0.0\DHN\bin\Debug\Interop.Scripting.dll
 F:\MTDoc\3项目资料\2015\Debug\DHN1.0.0.0\DHN\obj\Debug\DHN.csprojResolveAssemblyReference.cache
+F:\MTDoc\3项目资料\2015\MTN-201505040738-N  广东大华农赋码采集系统\2源代码\1现场软件\Debug\DHN1.0.0.0\DHN\obj\Debug\DHN.exe
+F:\MTDoc\3项目资料\2015\MTN-201505040738-N  广东大华农赋码采集系统\2源代码\1现场软件\Debug\DHN1.0.0.0\DHN\obj\Debug\DHN.pdb
